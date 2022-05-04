@@ -10,4 +10,7 @@ public class TextAnalyser {
 
     public String getUppercase(String text, int nthChar) {
     }
+
+    public String getNonLowercase(String text, int nthChar) {
+    }
 }

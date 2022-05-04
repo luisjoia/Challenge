@@ -33,4 +33,23 @@ public class textAnalyserTest {
 
         Assert.assertEquals(expectedResult, result);
     }
+
+
+
+    @Test
+    @Parameters({
+            "!tCL1Nical, 1, !CL1N",
+            "!tCL1Nical, 100, ",
+            "!tCL1Nical, 0, ",
+            "!tCL1Nical, -1, ",
+            ", 1, "
+    })
+    /**
+     * getNonLowercase method should only return all non lowercase characters every Nth character
+     */
+    public void getNonLowercase_Should_Only_Get_All_Non_Lowercase_Letters_Every_Nth_Character(String text, int nthChar, String expectedResult){
+        String result = textAnalyser.getNonLowercase(text, nthChar);
+
+        Assert.assertEquals(expectedResult, result);
+    }
 }
