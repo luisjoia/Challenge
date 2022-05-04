@@ -13,4 +13,7 @@ public class TextAnalyser {
 
     public String getNonLowercase(String text, int nthChar) {
     }
+
+    public String countUppercaseChars(String text, int nthChar) {
+    }
 }

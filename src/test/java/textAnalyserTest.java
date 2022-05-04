@@ -52,4 +52,17 @@ public class textAnalyserTest {
 
         Assert.assertEquals(expectedResult, result);
     }
+
+    @Test
+    @Parameters({
+            "ItCLINiCAL, 1, ICLINCAL"
+    })
+    /**
+     * countUppercaseChars method should only return uppercase characters every Nth character and print it
+     */
+    public void countUppercaseChars_Should_Only_Get_Uppercase_Letters_Every_Nth_Character_AndPrint_The_Letters_Count(String text, int nthChar, String expectedResult){
+        String result = textAnalyser.countUppercaseChars(text, nthChar);
+
+        Assert.assertEquals(expectedResult, result);
+    }
 }
