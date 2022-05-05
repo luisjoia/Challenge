@@ -25,7 +25,20 @@ public class TextAnalyser {
     }
 
     public String getNonLowercase(String text, int nthChar) {
-        return null;
+        String nonLowerCases = "";
+
+        if(text.length()<nthChar || nthChar<=0) return nonLowerCases;
+
+        for(int i = nthChar ; i <= text.length() - 1; i+=nthChar){
+
+            if (!Character.isLowerCase(text.charAt(i - 1)) || Character.isDigit(text.charAt(i - 1)) || !Character.isAlphabetic(text.charAt(i - 1))){
+
+                nonLowerCases += text.charAt(i - 1);
+            }
+        }
+
+
+        return nonLowerCases;
     }
 
     public String countUppercaseChars(String text, int nthChar) {

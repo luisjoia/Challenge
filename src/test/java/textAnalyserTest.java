@@ -39,6 +39,8 @@ public class textAnalyserTest {
     @Test
     @Parameters({
             "!tCL1Nical, 1, !CL1N",
+            "!tCL1Nical, 2, LN",
+            "!tCL1Nical, 3, CN",
             "!tCL1Nical, 100, ",
             "!tCL1Nical, 0, ",
             "!tCL1Nical, -1, ",
